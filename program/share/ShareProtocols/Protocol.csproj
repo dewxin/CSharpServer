@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>Library</OutputType>
+	  <TargetFrameworks>net462;net6.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Client\**" />
+    <EmbeddedResource Remove="Client\**" />
+    <None Remove="Client\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonRpc\CommonRpc.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Service\ClientService1000-10000\" />
+  </ItemGroup>
+
+</Project>

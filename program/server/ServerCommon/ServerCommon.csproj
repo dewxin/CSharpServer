@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!--
+	
+	<DefineConstants>DEBUG_LOG</DefineConstants>
+    -->
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\share\ShareProtocols\Protocol.csproj" />
+    <ProjectReference Include="..\..\share\SuperSocketSlim\SuperSocketSlim.csproj" />
+    <ProjectReference Include="..\ServerBase\ServerBase.csproj" />
+    <ProjectReference Include="..\SqlDataCommon\SqlDataCommon.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
